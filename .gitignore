@@ -1,0 +1,32 @@
+# Ignore everything by default, then whitelist what belongs in the repo
+*
+
+!.gitignore
+!README.md
+!requirements.txt
+!main.py
+!fetch_data.py
+!load_data.py
+!auth.py
+
+!DATA/
+!DATA/raw.csv
+
+!app_model/
+!app_model/*.py
+
+!pages/
+!pages/*.py
+
+!tests/
+!tests/*.py
+
+!.streamlit/
+!.streamlit/secrets.toml.example
+
+# Never commit these
+__pycache__/
+*.pyc
+.venv/
+.streamlit/secrets.toml
+.DS_Store
